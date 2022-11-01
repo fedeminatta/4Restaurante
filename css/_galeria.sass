@@ -1,0 +1,25 @@
+.main
+    .galeria
+        display: flex
+        flex-direction: grow
+        flex-wrap: wrap
+        width: 100%
+        justify-content: flex-start
+        align-items: flex-start
+        align-content: flex-start
+        overflow: hidden
+        background: #000
+        .foto
+            padding: 0
+            width: 25%
+            margin: 0px
+            transform: scale(1.05)
+            overflow: hidden
+            img
+                transition: transform .4s
+                height: 100%
+                &:hover
+                    transform: scale(1.2)
+
+.ubicacion
+    width: 100%

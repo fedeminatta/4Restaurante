@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap')
+
+
+body
+    font-family: 'open sans', sans-serif
+    font-size: 16px
+
+.contenedor
+    width: 90%
+    max-width: 1000px
+    margin: auto
+    overflow: hidden
+
+@import 'header'
+
+@import 'main'
+
+@import 'galeria'
+
+@import 'ubicacion'
+
+@import 'footer'
+
+@media screen and (max-width: 800px)
+    header
+        .contenedor
+            position: static
+            height: auto
+        .textos
+            position: static
+            margin: 100px 0
+            .nombre
+                font-size: 30px
+            h3
+                font-size: 18px
+        .menu
+            text-align: center
+            a
+                margin: 10px 20px 
+    .main
+        .acerca-de
+            .foto
+                width: 100%
+                position: relative
+            article
+                position: relative
+                width: 100%
+                top: -50px
+                transform: translate(0px, 0)
+        .menu
+            padding-top: 300px
+            article
+                width: 100%
+        .galeria
+            .foto
+                width: 50%
+        .mapa
+            width: 80%
+            margin: auto
+
+
+@media screen and (max-width: 400px)
+    header
+        .menu
+            a
+                font-size: 16px
+    .main
+        .galeria
+            .foto
+                width: 100%
+        .acerca-de
+            article
+                h3
+                    font-size: 34px
+                    margin-bottom: 10px
+        .menu
+            article
+                .nombre,.precio
+                    font-size: 16px
+                    line-height: 16px
+        .ubicacion
+            width: 100%
+            margin: 0 
+            .contenedor
+                .direccion
+                    p
+                        font-size: 18px
+            .direccion
+                margin-bottom: 15px
+            .direccion,.horarios
+                width: 100%
+                text-align: center
+            .horarios
+                margin-top: 20px   
+                display: flex
+                flex-direction: column
+                align-items: center
+                h4
+                    font-size: 40px
+                    font-weight: 300
+                p
+                    margin-bottom: 15px
+                    line-height: 30px
+                    font-size: 18px
+                .entre-semana,
+                .fin-semana
+                    width: 92%

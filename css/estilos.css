@@ -349,7 +349,7 @@ footer .copyright {
     font-size: 18px;
   }
   .main .ubicacion .horarios .entre-semana,
-.main .ubicacion .horarios .fin-semana {
+  .main .ubicacion .horarios .fin-semana {
     width: 92%;
   }
 }/*# sourceMappingURL=estilos.css.map */
